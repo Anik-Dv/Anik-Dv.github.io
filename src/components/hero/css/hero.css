@@ -1,0 +1,163 @@
+/* 
+ ==========================================
+  *  Author:        Anik Karmakar
+  *  Github:        Anik-Dv
+  *  Linkedin:      Anik Karmakar
+ ==========================================
+*/
+
+/* ==========================================
+    Hero Style 
+   ========================================== */
+
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@600&display=swap');
+
+
+
+/* START */
+.hero-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-section .hero-content h1 {
+    margin: 0;
+}
+
+.hello-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+    font-weight: normal;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+.hero-subtitle {
+    font-size: 3rem;
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+.hero-discription {
+    color: rgb(252, 252, 252);
+    font-size: 1.2rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2rem;
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+.hero-icon {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cta-btn .hero-button {
+    background-color: #280095;
+    color: rgb(219, 219, 219);
+    font-size: 12px;
+    font-weight: bold;
+    width: 12.7rem;
+    height: 2.4rem;
+    cursor: pointer;
+    border-radius: 0.9rem;
+    border-color: 2px solid rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+.cta-btn .hero-button:hover {
+    font-size: 11px;
+    width: 12.2rem;
+    height: 2.2rem;
+}
+
+/*
+    ============================================
+    Applying Style for Hero Socials Action Icon
+    ============================================
+*/
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 23px;
+    bottom: 2rem;
+    top: 20rem;
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* 
+==============================================
+ Apply Media Queries 
+==============================================
+*/
+
+/* .....................MEDIA QUERIES (SMALL DEVIES)................................ */
+@media screen and (max-width: 820px) {
+    
+    .header__socials {
+        position: absolute;
+        left: 18px;
+        top: 23rem;
+    }
+
+    .hero-discription {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        padding: 0rem 4rem 0rem 4rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .hero-discription {
+        font-size: 2rem;
+    }
+
+    .header__socials {
+        left: 18px;
+        top: 23rem;
+    }
+
+    .hero-discription {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        padding: 0rem 4rem 0rem 4rem;
+    }
+}
